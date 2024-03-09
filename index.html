@@ -1,202 +1,328 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="HushedAlways的个人网站，展示个人简介、项目、联系方式等">
-    <meta name="keywords" content="个人网站, HushedAlways, 项目展示, 联系方式">
-    <title>HushedAlways的个人网站</title>
-    <style>
-        :root {
-            --primary-color: #007bff;
-            --secondary-color: #6c757d;
-            --background-color: #f8f9fa;
-            --text-color: #212529;
-            --modal-background-color: #ffffff;
-            --overlay-color: rgba(0, 0, 0, 0.5);
-        }
-        
-        .dark-mode {
-            --background-color: #343a40;
-            --text-color: #f8f9fa;
-            --modal-background-color: #495057;
-            --overlay-color: rgba(255, 255, 255, 0.5);
-        }
-        
-        body {
-            font-family: 'Open Sans', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            transition: background-color 0.3s, color 0.3s;
-        }
-        
-        header, footer {
-            background-color: var(--modal-background-color);
-            padding: 20px;
-            text-align: center;
-            transition: background-color 0.3s;
-        }
-        
-        nav {
-            background: var(--secondary-color);
-            overflow: hidden;
-            transition: background-color 0.3s;
-        }
-        
-        nav a, .toggle-dark-mode {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-        
-        nav a:hover, .toggle-dark-mode:hover {
-            background-color: var(--primary-color);
-            color: black;
-        }
-        
-        .container {
-            padding: 20px;
-        }
-        
-        .card {
-            background-color: var(--modal-background-color);
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            transition: 0.3s;
-            width: 300px;
-            margin: 10px;
-            display: inline-block;
-            border-radius: 5px;
-        }
-        
-        .card:hover {
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        }
-        
-        .card img {
-            width: 100%;
-            border-radius: 5px 5px 0 0;
-        }
-        
-        .card-container {
-            padding: 2px 16px;
-        }
-        
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: var(--overlay-color);
-        }
-        
-        .modal-content {
-            background-color: var(--modal-background-color);
-            margin: 15% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        
-        .close:hover, .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        
-        @media screen and (max-width: 768px) {
-            nav a, .toggle-dark-mode {
-                float: none;
-                display: block;
-                text-align: left;
-            }
+<html lang="zh">
+   <head>
+      <title>Waterblock79's website</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <link rel="stylesheet" type="text/css" href="/assets/styles.css" />
+      <script
+         type="module"
+         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+         nomodule
+         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
+      <!-- Google tag (gtag.js) -->
+      <script
+         async
+         src="https://www.googletagmanager.com/gtag/js?id=G-YFC9SHL1Q7"
+      ></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag() {
+            dataLayer.push(arguments);
+         }
+         gtag("js", new Date());
+         gtag("config", "G-YFC9SHL1Q7");
+      </script>
+   </head>
+   <body>
+      <div class="card index-about" time>
+         <!-- Content -->
+         <div class="title">
+            嗨！欢迎来到 <span class="name">waterblock79</span> 的小站
+         </div>
+         <div class="about">
+            <ul>
+               <li>
+                  这是一名居住在<b>北京</b>的<b>高中生</b>，Scratcher，会一些前端开发，偶尔玩玩游戏，挺喜欢听歌的。
+               </li>
+               <li>
+                  使用并学习着：<b>HTML/CSS</b>、<b>Javascript</b> +
+                  <b>Typescript</b>、<b>Vue.js</b>、<b>Python</b>，
+               </li>
+               <li style="opacity: 0.75">
+                  有时候玩这些游戏：<b>Minecraft</b>、<b>RUST</b>、<b>CS</b>、<b>文明 6</b>、<b>第五人格</b>。
+               </li>
+            </ul>
+         </div>
+         <div class="contact">
+            <a
+               class="chip"
+               href="//github.com/waterblock79"
+               target="_blank"
+               tooltip="Github"
+            >
+               <ion-icon name="logo-github" class="icon"></ion-icon>
+            </a>
+            <a
+               class="chip"
+               href="mailto:waterblock79@outlook.com"
+               tooltip="电子邮件"
+            >
+               <ion-icon name="mail-open" class="icon"></ion-icon>
+            </a>
+            <a
+               class="chip"
+               href="//gitblock.cn/Users/1068072"
+               target="_blank"
+               tooltip="阿儿法营 / 稽木世界"
+            >
+               <img src="https://aerfaying.com/Content/logo.ico" class="icon" />
+            </a>
+         </div>
+      </div>
+      <div class="index-infos">
+         <div class="index-projects card">
+            <div class="title">一些项目和作品</div>
+            <div class="projects">
+               <a
+                  class="project"
+                  href="//waterblock79.github.io/aerfaying-explore/"
+                  target="_blank"
+               >
+                  <ion-icon
+                     name="extension-puzzle"
+                     class="logo"
+                     style="color: #455a64"
+                  ></ion-icon>
+                  <div>
+                     <div class="title">Aerfaying Explore</div>
+                     <div class="description">
+                        一个开源脚本，为阿儿法营/稽木世界社区提供了一些优化、补丁及小功能来提升社区内的探索效率和用户体验。
+                     </div>
+                  </div>
+               </a>
+            </div>
+         </div>
+         <div class="index-dynamic card" tooltip="随手拍的一些照片:D">
+         </div>
+      </div>
+      <div class="index-posts card">
+         <div class="title">博客</div>
+         <div class="posts">
             
-            .modal-content {
-                width: 90%;
-            }
-        }
-    </style>
-</head>
-<body>
+            <a class="post" href="posts/zinc-engine-guide.html">
+               
+               <div class="post-content">
+                  <div class="post-title">Zinc Engine 指南</div>
+                  <div class="post-excerpt">Zinc Engine - Scratch 原生的 UI 渲染引擎</div>
+               </div>
+               <div class="post-info">
+                  <ion-icon name="time"></ion-icon>
+                  <span class="time"
+                     >2024-2-17</span
+                  >
+                  
+                  <ion-icon name="pricetag"></ion-icon>
+                   
+                  <span class="tag">Scratch</span>
+                  
+               </div>
+            </a>
+            
+            <a class="post" href="posts/anti-addiction.html">
+               
+               <div class="post-content">
+                  <div class="post-title">看游戏“防沉迷”机制</div>
+                  <div class="post-excerpt">中国的游戏“防沉迷”机制愈加严格，从一个未成年游戏玩家的角度来聊一聊“防沉迷”的发展和我对它的看法。</div>
+               </div>
+               <div class="post-info">
+                  <ion-icon name="time"></ion-icon>
+                  <span class="time"
+                     >2023-10-21</span
+                  >
+                   
+               </div>
+            </a>
+            
+            <a class="post" href="posts/new-year-game-clip.html">
+               
+               <div class="post-content">
+                  <div class="post-title">跨年游戏剪辑</div>
+                  <div class="post-excerpt">2019、2020、2021 这三年年末跨年的时候都做了个游戏的剪辑视频，当时还是小学和初中，现在似乎也没时间和那种热情了，放在博客纪念一下（</div>
+               </div>
+               <div class="post-info">
+                  <ion-icon name="time"></ion-icon>
+                  <span class="time"
+                     >2023-8-3</span
+                  >
+                   
+               </div>
+            </a>
+            
+            <a class="post" href="posts/course-it-book1.html">
+               
+               <div class="post-content">
+                  <div class="post-title">信息技术必修一核心知识整理</div>
+                  <div class="post-excerpt">高中信息技术必修一的（大部分）核心知识整理</div>
+               </div>
+               <div class="post-info">
+                  <ion-icon name="time"></ion-icon>
+                  <span class="time"
+                     >2022-10-14</span
+                  >
+                  
+                  <ion-icon name="pricetag"></ion-icon>
+                   
+                  <span class="tag">学习</span>
+                  
+               </div>
+            </a>
+            
+            <a class="post" href="posts/scratch-layer.html">
+               
+               <div class="post-content">
+                  <div class="post-title">在 Scratch 中使用列表管理图层</div>
+                  <div class="post-excerpt">简单解析 Scratch 图层机制，并在列表来更加清晰的管理角色间的图层关系！</div>
+               </div>
+               <div class="post-info">
+                  <ion-icon name="time"></ion-icon>
+                  <span class="time"
+                     >2022-10-1</span
+                  >
+                  
+                  <ion-icon name="pricetag"></ion-icon>
+                   
+                  <span class="tag">Scratch</span>
+                  
+               </div>
+            </a>
+            
+            <a class="post" href="posts/data-uri.html">
+               
+               <div class="post-content">
+                  <div class="post-title">浏览器 Data 协议的应用</div>
+                  <div class="post-excerpt">介绍了浏览器中的 data 协议使用方法。</div>
+               </div>
+               <div class="post-info">
+                  <ion-icon name="time"></ion-icon>
+                  <span class="time"
+                     >2022-9-29</span
+                  >
+                  
+                  <ion-icon name="pricetag"></ion-icon>
+                   
+                  <span class="tag">前端</span>
+                  
+               </div>
+            </a>
+            
+            <a class="post" href="posts/physic-book1-unit1-2.html">
+               
+               <div class="post-content">
+                  <div class="post-title">物理必修一第一、二单元相关公式及推导整理</div>
+                  <div class="post-excerpt">学习高中物理科目必修一的第一、二单元的一些学习心得和记录</div>
+               </div>
+               <div class="post-info">
+                  <ion-icon name="time"></ion-icon>
+                  <span class="time"
+                     >2022-7-21</span
+                  >
+                  
+                  <ion-icon name="pricetag"></ion-icon>
+                   
+                  <span class="tag">学习</span>
+                  
+               </div>
+            </a>
+            
+            <a class="post" href="posts/windows-subsystem-android.html">
+               
+               <div class="post-content">
+                  <div class="post-title">Windows Subsystem for Android 体验</div>
+                  <div class="post-excerpt">关于 Windows SubSystem fir Android （Windows 下的 Android 子系统，可在 Windows 中运行 Android 应用）的体验 &amp; 安装和配置教程。</div>
+               </div>
+               <div class="post-info">
+                  <ion-icon name="time"></ion-icon>
+                  <span class="time"
+                     >2021-10-24</span
+                  >
+                  
+                  <ion-icon name="pricetag"></ion-icon>
+                   
+                  <span class="tag">Windows</span>
+                  
+                  <span class="tag">Android</span>
+                  
+               </div>
+            </a>
+            
+            <a class="post" href="posts/android-huawei.html">
+               
+               <div class="post-content">
+                  <div class="post-title">给你的华为设备刷入类原生&amp;ROOT</div>
+                  <div class="post-excerpt">一篇比较简洁的华为手机刷机教程，适合新手入门。</div>
+               </div>
+               <div class="post-info">
+                  <ion-icon name="time"></ion-icon>
+                  <span class="time"
+                     >2021-10-23</span
+                  >
+                  
+                  <ion-icon name="pricetag"></ion-icon>
+                   
+                  <span class="tag">Android</span>
+                  
+               </div>
+            </a>
+            
+            <a class="post" href="posts/websocket.html">
+               
+               <div class="post-content">
+                  <div class="post-title">HTML5 WebSocket的原理及聊天室应用</div>
+                  <div class="post-excerpt">介绍了 Websocket 的原理、用法，并提供了一个聊天室的例子。</div>
+               </div>
+               <div class="post-info">
+                  <ion-icon name="time"></ion-icon>
+                  <span class="time"
+                     >2020-10-28</span
+                  >
+                   
+               </div>
+            </a>
+            
+            <a class="post" href="posts/build-hexo.html">
+               
+               <div class="post-content">
+                  <div class="post-title">花10分钟，搭建你自己的博客</div>
+                  <div class="post-excerpt">使用 Hexo 搭建你自己的博客。</div>
+               </div>
+               <div class="post-info">
+                  <ion-icon name="time"></ion-icon>
+                  <span class="time"
+                     >2020-7-13</span
+                  >
+                  
+                  <ion-icon name="pricetag"></ion-icon>
+                   
+                  <span class="tag">好东西</span>
+                  
+               </div>
+            </a>
+            
+         </div>
+      </div>
+      <script>
+         const $ = (selector) => document.querySelectorAll(selector);
 
-<header>
-    <h1>欢迎来到HushedAlways的个人网站</h1>
-</header>
-
-<nav>
-    <a href="#home">首页</a>
-    <a href="#about">关于我</a>
-    <a href="#projects">项目展示</a>
-    <a href="#contact">联系方式</a>
-    <span class="toggle-dark-mode">切换暗模式</span>
-</nav>
-
-<div class="container">
-    <section id="home">
-        <h2>首页</h2>
-        <p>这里是你的个人简介或欢迎语。</p>
-    </section>
-    <section id="about">
-        <h2>关于我</h2>
-        <p>介绍你的职业背景、兴趣爱好等信息。</p>
-    </section>
-    <section id="projects">
-        <h2>项目展示</h2>
-        <div class="card" onclick="openModal('modal1')">
-            <img src="project1.jpg" alt="项目1">
-            <div class="card-container">
-                <h4><b>项目1名称</b></h4>
-                <p>项目简介</p>
-            </div>
-        </div>
-        <div id="modal1" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('modal1')">&times;</span>
-                <h2>项目1详细信息</h2>
-                <p>这里可以放置项目的详细描述，包括使用的技术、解决方案、项目成果等。</p>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <h2>联系方式</h2>
-        <p>提供你的电子邮箱、社交媒体账号等联系方式。</p>
-    </section>
-</div>
-
-<footer>
-    <p>版权所有 &copy; 2024 HushedAlways</p>
-</footer>
-
-<script>
-    function openModal(modalId) {
-        document.getElementById(modalId).style.display = "block";
-    }
-
-    function closeModal(modalId) {
-        document.getElementById(modalId).style.display = "none";
-    }
-
-    document.querySelector('.toggle-dark-mode').addEventListener('click', function() {
-        document.body.classList.toggle('dark-mode');
-    });
-</script>
-
-</body>
+         let hours = new Date().getHours() + new Date().getMinutes() / 60,
+            months = new Date().getMonth() + new Date().getDate() / 31;
+         let sunset = ((x) => 1.75 * Math.sin(0.4 * x - 1.06) + 18.1)(months),
+            sunrise = ((x) => -1.9 * Math.sin(0.4 * x - 1.07) + 6.6)(months);
+         console.log(
+            `now: ${hours} \npredicted_sunset: ${sunset} \npredicted_sunrise: ${sunrise}`
+         );
+         let time;
+         if (hours < sunrise - 0.25 || hours > sunset + 0.25) time = "night";
+         else if (hours > sunrise + 1 && hours < sunset - 1) time = "day";
+         else time = "sunrise_sunset";
+         $(".index-about")[0].setAttribute("time", time);
+         
+         const images = [{"url":"/assets/images/%E4%B8%80%E5%8F%AA%E9%B8%9F.jpg","text":"一只鸟"},{"url":"/assets/images/%E5%8C%97%E4%BA%AC%E5%B8%82%20%E4%B8%9C%E4%BA%8C%E7%8E%AF.jpg","text":"北京市 东二环"},{"url":"/assets/images/%E5%8C%97%E4%BA%AC%E5%B8%82%20%E6%85%95%E7%94%B0%E5%B3%AA%E9%95%BF%E5%9F%8E.jpg","text":"北京市 慕田峪长城"},{"url":"/assets/images/%E5%8C%97%E4%BA%AC%E5%B8%82%20%E8%A5%BF%E5%8D%95.jpg","text":"北京市 西单"},{"url":"/assets/images/%E5%8C%97%E4%BA%AC%E5%B8%82%20%E8%A5%BF%E5%9F%8E%E5%8C%BA.jpg","text":"北京市 西城区"},{"url":"/assets/images/%E5%8C%97%E4%BA%AC%E5%B8%82%20%E9%95%BF%E5%AE%89%E8%A1%97.jpg","text":"北京市 长安街"},{"url":"/assets/images/%E6%9D%AD%E5%B7%9E%E5%B8%82%20%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99.jpg","text":"杭州市 杭州东站"},{"url":"/assets/images/%E9%BA%A6%E7%94%B0.jpg","text":"麦田"}];
+         const show_image = images[Math.floor(Math.random() * images.length)];
+         $('.index-dynamic')[0].style.setProperty('--image', `url(${show_image.url})`);
+         $('.index-dynamic')[0].style.setProperty('--text', `"${show_image.text}"`);
+      </script>
+   </body>
 </html>
