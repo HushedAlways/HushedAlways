@@ -1,8 +1,8 @@
-- @HushedAlways,from China.
-- I’m interested in Anything.
+- @HushedAlways,a China coder.
+- I'm a middle school student now.
+- I’m prepare for the exam.
 - I’m currently learning Python.
-- I’m looking to collaborate of CangFanQiong
-- How to reach me kirin_always@outlook.com
+- How to reach me?I think nobody is need me.Then,I needn't public my email or others.
 
 <!---
 HushedAlways/HushedAlways is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
