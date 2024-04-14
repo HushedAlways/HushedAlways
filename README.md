@@ -1,7 +1,7 @@
-- @HushedAlways,a China coder.
-- I'm a middle school student now.
-- I’m prepare for the exam.
-- I’m currently learning Python.
+- @HushedAlways,a China coder,a Chinese student.
+- I'm a middle school student of Chongqing Zhejiang-Fuling Friendship School now.
+- I’m preparing for a important exam.
+- I’m currently learning C Language.
 - How to reach me?I think nobody is need me.Then,I needn't public my email or others.
 
 <!---
